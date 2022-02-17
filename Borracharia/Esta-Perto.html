@@ -15,15 +15,19 @@
         <header class="flex">
             <div id="all-top" class="flex">
                 <img src="https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2018/01/Logo-File-Carros-03.png" id="logo">
-                <input type="button" class="botao" value="Home">
+                <a href="/Borracharia/Index.html">
+                    <input type="button" class="botao" value="Home">
+                </a>
                 <input type="button" class="botao" value="Produtos">
-                <input type="button" class="botao" value="Está perto">
+                <a href="/Borracharia/Esta-Perto.html">
+                    <input type="button" class="botao" value="Está perto"></a>
                 <input type="button" class="botao" value="Sobre nós">
+
             </div>
         </header>
 
         <main>
-            <div id="content" class="flex-content">
+            <div id="content">
                 <div class="flex-content">
                     <h1>Venha nos visitar</h1>
                     <br>
@@ -31,19 +35,26 @@
                         <label for="input">Cep </label>
                         <input type="text" id="input-cep" placeholder="00000-000">
                     </div>
+                    <br>
                     <div class="button">
                         <input id="botao" type="button" value="Pesquisa CEP">
                     </div>
-                    <br>
                 </div>
                 <div class="content-fixed" id="box-result">
                     <h2>Filiais que possuímos</h2>
                     <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                       </svg> Rua XV de Novembro, 1589, Centro - Blumenau - SC</h3>
-
+                    <br>
+                    <h2>Você buscou pelo endereço</h2>
+                    <!--JÁ ESTÃO COM AS IDs PARA TRAZER O INPUT POR SCRIPT -->
+                    <h3 id="address-input"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg> Rua XV de Novembro, 1479, Centro - Gaspar - SC</h3>
+                    <br>
+                    <h3 id="response">Ainda não temos uma filial na sua cidade :c</h3>
+                    <h3 id="response">Que bom! Nós temos uma filial em NOME DA CIDADE c:</h3>
                 </div>
-
             </div>
         </main>
 
