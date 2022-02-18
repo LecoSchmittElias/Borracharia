@@ -6,34 +6,26 @@
     <link rel="stylesheet" type="text/css" href="style/Style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>Lightyear</title>
+    <link rel="icon" type="png" href="assets/icone.png">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        $(function teste() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-    <div id="container">
-        <header class="flex">
-            <div id="all-top" class="flex">
-                <img src="https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2018/01/Logo-File-Carros-03.png"
-                    id="logo">
-                <input type="button" class="botao" value="Home">
-                <input type="button" class="botao" value="Produtos">
-                <input type="button" class="botao" value="Está perto">
-                <input type="button" class="botao" value="Sobre nós">
-            </div>
-        </header>
 
+    <div id="container">
+        <div id="header"></div>
         <main>
             <div id="content">
 
-
             </div>
         </main>
-
-
-        <footer>
-            <div id="rodape" class="flex">
-                <h3>Em construção</h3>
-            </div>
-        </footer>
+        <div id="footer"></div>
     </div>
 </body>
 
