@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Poppins, sans-serif;
 }
 
 body {
@@ -8,6 +9,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 #container {
@@ -100,7 +106,13 @@ main {
     background-color: aqua;
 }
 
-#input-cep {}
+#response-true {
+    color: green;
+}
+
+#response-false {
+    color: red;
+}
 
 #box-result {
     display: flex;
