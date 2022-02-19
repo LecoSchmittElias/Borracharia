@@ -13,6 +13,7 @@ body {
 #container {
     width: 100%;
     height: 100%;
+    
 }
 
 header {
@@ -37,16 +38,7 @@ header {
     align-items: center;
 }
 
-hr {
-   
-    display: block;
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
-   margin-left: auto;
-   margin-right: auto;
-   border-style: inset;
-   border-width: 1px;
-}
+
 
 .botao {
     width: 150px;
@@ -97,5 +89,29 @@ main {
     display: flex;
     width: 100%;
     height: 500px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     background-color: aqua;
+}
+
+#imagem {
+
+    width: 300px;
+    height: 200px;    
+    border-radius: 10px 10px 10px 10px;
+    
+
+}
+
+#enquadro {
+   
+    display: flex;
+    flex-direction:column;
+ 
+    
+    text-align: center;
+    background-position:center;
+
 }
