@@ -103,7 +103,13 @@ main {
     justify-content: space-around;
     width: 100%;
     height: 500px;
-    background-color: aqua;
+}
+
+.content-fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #response-true {
@@ -120,6 +126,17 @@ main {
     display: flex;
 }
 
+.input-search {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
 .searchbtn {
     width: 40px;
     height: 36px;
@@ -132,15 +149,16 @@ main {
     font-size: 20px;
 }
 
-.input-search {
-    width: 100%;
-    border: 3px solid #00B4CC;
-    border-right: none;
-    padding: 5px;
-    height: 20px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #9DBFAF;
+.reloadbtn {
+    width: 100px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 #box-result {
@@ -153,3 +171,111 @@ main {
     border-style: solid;
     border-color: #242424;
 }
+
+
+/* =================================================================*/
+
+
+/*row*/
+
+.estilo-container {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/*blue*/
+
+.caixa-mapa {
+    color: #cccccc;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    width: 80vw;
+    height: 70vh;
+    z-index: 1001;
+    border-radius: 12px;
+    box-shadow: .5px 4px 20px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.caixa-conteudo {
+    color: #242424;
+    display: block;
+    align-items: center;
+    justify-content: "center";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.788);
+    border-radius: 12px;
+    box-shadow: .5px 4px 20px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.mapa {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0);
+    padding: 0px;
+    filter: blur(0.5px);
+}
+
+
+/*<div id="container">
+        <div id="header"></div>
+        <main>
+            <div id="content">
+                <div class="flex-content">
+                    <h1>Venha nos visitar</h1>
+                    <br>
+                    <p id="help">Insira seu cep sem o traço, para saber se temos uma filial por perto</p>
+                    <div class="search" id="search-cep">
+                        <input type="number" id="input-cep" class="input-search" placeholder="00000000">
+                        <button type="button" class="searchbtn" id="searchbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="content-fixed" id="box-result">
+                    <h2>Filiais que possuímos</h2>
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg> Rua XV de Novembro, 1589, Centro - Blumenau - SC</h3>
+                    <br>
+                    <div class="content-fixed">
+                        <h2 id="search-address"></h2>
+                        <div class="row">
+                            <!--JÁ ESTÃO COM AS IDs PARA TRAZER O INPUT POR SCRIPT -->
+                            <h3 id="rua-input"></h3>
+                            <h3 id="bairro-input"></h3>
+                            <h3 id="cidade-input"></h3>
+
+                        </div>
+                        <br>
+                        <h3 id="response-true"></h3>
+                        <h3 id="response-false"></h3>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </main>
+        <div id="footer"></div>
+    </div>
