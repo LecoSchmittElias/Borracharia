@@ -19,7 +19,7 @@ async function buscaCep() {
     let bairro = json.bairro;
     let cidade = json.localidade;
     let uf = json.uf;
-    document.getElementById('rua-input').innerHTML = `${rua}, ${bairro} - ${cidade} - ${uf}`;
+    document.getElementById('rua-input').innerHTML = ` ${rua}, ${bairro} - ${cidade} - ${uf}`;
 
 
 
@@ -33,9 +33,6 @@ async function buscaCep() {
 
     89010000
     89100000
-
-    document.getElementById('rua-input').innerHTML = json.logradouro;
-    document.getElementById('bairro-input').innerHTML = json.bairro;
-    document.getElementById('cidade-input').innerHTML = json.localidade;*/
+*/
 }
 document.getElementById('searchbtn').addEventListener('click', buscaCep);
