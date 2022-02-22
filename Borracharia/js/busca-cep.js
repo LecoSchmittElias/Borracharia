@@ -37,10 +37,9 @@ async function buscaCep() {
 
     document.getElementById('help').innerHTML = "";
     document.getElementById('search-cep').innerHTML = "<button class='reloadbtn' onclick='updateDiv()'>Nova busca</button>";
-
 }
-document.getElementById('searchbtn').addEventListener('click', buscaCep);
 
+document.getElementById('searchbtn').addEventListener('click', buscaCep);
 
 
 //tentei tudo pra der reload só na div mas só quebrei a cabeça, entao recarrega a pagina toda
